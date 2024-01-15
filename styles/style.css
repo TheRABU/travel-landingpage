@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 :root {
   --primary-color: #3c0753;
@@ -9,6 +10,7 @@
   --fourth-color: #030637;
   --button-color: #ff004d;
   --visited-links-color: #424247;
+  --span-color: #ed2b2a;
 }
 body {
   max-width: 1442px;
@@ -25,7 +27,7 @@ body {
 .nav-icon-div {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .nav-icon-div img {
   width: 50px;
@@ -45,4 +47,7 @@ body {
 }
 .nav-links li a:visited {
   color: var(--visited-links-color);
+}
+.nav-title {
+  color: var(--span-color);
 }
