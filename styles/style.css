@@ -17,6 +17,32 @@ body {
   max-width: 1442px;
   background-color: #fff;
 }
+.content-title {
+  color: #131318;
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 800;
+}
+.content-description {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.primary-btn {
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  width: 160px;
+  height: 52px;
+  padding: 16px auto;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+}
 
 /* header section starts here */
 .nav-container {
@@ -165,4 +191,57 @@ select:focus {
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
+}
+/* Popular tour section*/
+.popular-tour-container {
+  width: 90%;
+  height: 84vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 70px 0;
+}
+.tour-content {
+  flex-direction: row;
+  width: 60%;
+  gap: 15px;
+  height: 500px;
+  padding: 20px 30px;
+}
+.tour-title,
+.tour-description,
+.tour-content li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.our-services {
+  margin-bottom: 20px;
+}
+.tour-image-div {
+  height: auto;
+}
+.tour-image-div img {
+  width: 100%;
+  height: 490px;
+  margin-right: 20px;
+}
+
+/* Choose Destination section */
+.destination-container {
+  width: 80%;
+  margin: 30px auto;
+  height: 100vh;
+  border: 2px solid teal;
+}
+.destination-content {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  padding: 0px auto 12px auto;
+}
+.destination-text {
+  height: 200px;
+  width: 100%;
+  margin-top: 10px;
 }
