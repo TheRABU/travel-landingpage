@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #3c0753;
+  --secondary-color: #720455;
+  --third-color: #910a67;
+  --fourth-color: #030637;
+  --button-color: #ff004d;
+  --visited-links-color: #424247;
+}
+body {
+  max-width: 1442px;
+}
+
+/* header section starts here */
+.nav-container {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-icon-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-icon-div img {
+  width: 50px;
+  height: 50px;
+}
+.nav-links > ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.nav-links li {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+}
+.nav-links li a:visited {
+  color: var(--visited-links-color);
+}
