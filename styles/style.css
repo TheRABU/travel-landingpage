@@ -11,9 +11,11 @@
   --button-color: #ff004d;
   --visited-links-color: #424247;
   --span-color: #ed2b2a;
+  --title-text-color: #131318;
 }
 body {
   max-width: 1442px;
+  background-color: #fff;
 }
 
 /* header section starts here */
@@ -28,6 +30,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .nav-icon-div img {
   width: 50px;
@@ -44,10 +47,122 @@ body {
 }
 .nav-links li a {
   text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
 }
 .nav-links li a:visited {
   color: var(--visited-links-color);
 }
+.nav-links li a:hover {
+  color: #ff004d;
+  border-bottom: 2px solid #ff004d;
+}
 .nav-title {
+  color: var(--title-text-color);
+  font-size: 2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.nav-span {
   color: var(--span-color);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* banner section starts.. */
+.banner-container {
+  width: 80%;
+  margin: 30px auto;
+}
+/* Explore Travel style */
+.explore-travel-div {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.explore-travel-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.explore-title {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  flex-wrap: nowrap;
+  width: 70%;
+  margin-bottom: 15px;
+}
+.explore-description {
+  width: 600px;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.dropdown-div {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 70%;
+  height: 80px;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-item {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  border: 0;
+  padding: 16px;
+  color: rgba(19, 19, 24, 0.5);
+
+  font-size: 1rem;
+  font-weight: 400;
+}
+.dropdown-div input[type="text"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ff004d;
+}
+.find-now-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  width: 160px;
+  height: 52px;
+  padding: 16px auto;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
 }
