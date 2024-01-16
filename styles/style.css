@@ -22,6 +22,7 @@ body {
   text-align: center;
   font-size: 2.9rem;
   font-weight: 800;
+  margin: 5px;
 }
 .content-description {
   color: rgba(19, 19, 24, 0.7);
@@ -273,7 +274,7 @@ select:focus {
 /* Why chose us */
 .chose-us-section {
   width: 80%;
-  margin: 25px auto;
+  margin: 0 auto;
   height: auto;
 }
 .chose-us-content {
@@ -282,29 +283,10 @@ select:focus {
   margin: 0 auto;
   width: 60%;
   padding: 0 auto;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
-/* .card-container {
-  display: grid;
-  border: 2px solid red;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  justify-content: center;
-  margin: 0 auto;
-}
-.card {
-  border: 2px solid blue;
-  width: 90%;
-  height: 250px;
-  border-radius: 16px;
-  border: 1px solid rgba(233, 68, 68, 0.2);
-  background: rgba(233, 68, 68, 0.05);
-  color: #fff;
-}
-#card3 {
-  grid-column: 1fr;
-  justify-self: center;
-} */
+
 .card-container {
   height: auto;
   width: 100%;
@@ -315,8 +297,9 @@ select:focus {
   height: 250px;
   border-radius: 16px;
   background: rgba(233, 68, 68, 0.05);
-  color: #ed2b2a;
-  padding: 10px auto;
+  color: #5a5a5d;
+  cursor: pointer;
+  padding: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -326,11 +309,113 @@ select:focus {
   justify-content: space-between;
   padding: 20px;
   gap: 10px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 8px auto;
 }
 .second-card-part {
   width: 50%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+#card1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+#card2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+#card3 {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
+/* Deals and discount section starts here */
+.tour-package-container {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+.package-text-contents {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  padding: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.package-image-container {
+  height: auto;
+  width: 100%;
+}
+.package-image-container > div {
+  height: 500px;
+  justify-content: right;
+  display: flex;
+  background-image: url("../Images/Group\ 39.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.package-card {
+  margin: 50px;
+  width: 500px;
+  height: 380px;
+  padding: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 16px;
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  border: 0;
+  cursor: pointer;
+}
+#middle-card {
+  /* this is just the middle package card */
+  height: 500px;
+  justify-content: start;
+  display: flex;
+  background-image: url("../Images/Group\ 40.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.icons-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+.package-contents {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  gap: 15px;
+  margin: 30px 0;
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.price-span {
+  color: var(--span-color);
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: 10px auto;
+}
+.package-title {
+  color: #131318;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin: 27px auto;
 }
