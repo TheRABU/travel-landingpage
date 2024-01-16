@@ -419,3 +419,70 @@ select:focus {
   justify-content: center;
   margin: 27px auto;
 }
+
+/* Video section container's styling starts here */
+.video-section-container {
+  width: 80%;
+  height: 84vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 30px auto;
+}
+.left-side-contents {
+  color: cadetblue;
+  margin: 50px 5px;
+  padding: 20px;
+  width: 90%;
+  justify-content: left;
+  align-items: center;
+}
+.left-side-contents > ul {
+  display: block;
+  margin: 20px;
+  padding-left: 5px;
+}
+.left-side-contents ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #131318;
+  font-weight: 700;
+}
+.left-side-wrapper {
+  display: flex;
+  width: 50%;
+  height: 500px;
+  padding: 30px auto;
+  justify-content: left;
+}
+.left-side-contents .section-title {
+  width: 70%;
+  color: #131318;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.left-side-contents .description-text {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.right-side-video {
+  height: auto;
+  justify-content: center;
+  align-items: end;
+  width: 50%;
+  display: flex;
+}
+.right-side-video iframe {
+  width: 100%;
+  max-height: 550px;
+  margin: 50px;
+
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    #131318 -31.96%,
+    rgba(19, 19, 24, 0) 100%
+  );
+}
