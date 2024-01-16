@@ -33,6 +33,12 @@
   .popular-tour-container {
     flex-direction: column;
     padding: 0px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px auto 0 auto;
   }
   .tour-title,
   .tour-description {
@@ -50,5 +56,41 @@
   .tour-image-div img {
     margin: 10px auto;
     width: 100%;
+  }
+
+  /* chose us section */
+  .chose-us-content {
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    width: 100%;
+    height: max-content;
+    padding: 0 auto;
+  }
+  .content-title {
+    margin: 0 auto 0 auto;
+  }
+  .card-container {
+    height: 650px;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .first-card-part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 10px;
+    margin: 0 auto 8px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .second-card-part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
