@@ -1,0 +1,54 @@
+/* navbar */
+@media screen and (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-links > ul {
+    flex-direction: column;
+  }
+
+  .explore-travel-div,
+  .explore-travel-content {
+    flex-direction: column;
+    height: auto;
+  }
+  .explore-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    flex-wrap: nowrap;
+    width: 40%;
+    margin-bottom: 5px;
+  }
+  .explore-description {
+    width: fit-content;
+  }
+  .dropdown-div {
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    margin: 20px auto;
+  }
+  /*popular tour section */
+  .popular-tour-container {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .tour-title,
+  .tour-description {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+  }
+  .tour-content {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .tour-image-div img {
+    margin: 10px auto;
+    width: 100%;
+  }
+}
