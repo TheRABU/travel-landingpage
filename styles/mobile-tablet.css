@@ -260,3 +260,221 @@
     margin: -10px auto 20px auto;
   }
 }
+/*MEDIUM DEVICES..... */
+/* Tablet devices */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-links > ul {
+    flex-direction: column;
+  }
+
+  .explore-travel-div,
+  .explore-travel-content {
+    flex-direction: column;
+    height: auto;
+  }
+  .explore-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    flex-wrap: nowrap;
+    width: 40%;
+    margin-bottom: 5px;
+  }
+  .explore-description {
+    width: fit-content;
+  }
+  .dropdown-div {
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    margin: 20px auto;
+  }
+  /*popular tour section */
+  .popular-tour-container {
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 20px auto 0 auto;
+  }
+  .tour-title,
+  .tour-description {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+  }
+  .tour-content {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .tour-image-div img {
+    margin: 10px auto;
+    width: 100%;
+  }
+  /* choose destination section */
+
+  .choose-destination--showcase > .row-even.shrink-left,
+  .choose-destination--showcase > .row-odd,
+  .choose-destination--showcase > .row-even {
+    grid-template-columns: 1fr;
+  }
+  .chose-us-section {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .chose-us-content {
+    justify-content: center;
+    text-align: center;
+    margin: 16px auto;
+    width: 80%;
+    height: max-content;
+    padding: 0 auto;
+  }
+  .content-title {
+    margin: 0 auto 0 auto;
+  }
+  .card-container {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .first-card-part {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    gap: 10px;
+    margin: 0 auto 8px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .second-card-part {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  /* Tour package */
+  .package-image-container > div {
+    flex-direction: column;
+    height: auto;
+  }
+  /* video section */
+  .video-section-container {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: -13px auto;
+  }
+  .left-side-wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding: 4px auto;
+    justify-content: start;
+  }
+  .left-side-contents {
+    color: cadetblue;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-side-contents .section-title {
+    width: 80%;
+    color: #131318;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .left-side-contents > ul {
+    display: block;
+    margin: 10px;
+    padding-left: 5px;
+  }
+  .right-side-video {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+  }
+  .right-side-video iframe {
+    width: 100%;
+    height: 202px;
+    margin: 25px auto;
+  }
+  /*Client review section */
+  .review-card-container {
+    flex-direction: column;
+  }
+  /* Newsletter section */
+  .news-letter-container {
+    width: 100%;
+    margin: 0px auto;
+    flex-direction: column;
+  }
+  .left-side-div {
+    width: 77%;
+    padding: 17px;
+    flex-direction: column;
+    margin: 3px auto;
+  }
+  .form-div-container {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+  }
+  .right-side-div {
+    /* height: 250px; */
+    width: 75%;
+    flex-direction: column;
+  }
+  .right-side-div img {
+    width: 100%;
+    max-height: 550px;
+    margin: 15px auto;
+    position: relative;
+  }
+
+  /*Footer styles */
+  .footer-content-div {
+    width: 75%;
+    margin: 25px auto;
+  }
+  .footer-icon-div {
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    flex-direction: row;
+  }
+  .footer-social-links {
+    width: 100%;
+    margin: 35px auto;
+  }
+  .footer-copyright {
+    margin: -10px auto 20px auto;
+  }
+}
