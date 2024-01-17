@@ -29,6 +29,14 @@
     padding: 50px;
     margin: 20px auto;
   }
+  /* choose destination section */
+  @media screen and (max-width: 456px) {
+    .choose-destination--showcase > .row-even.shrink-left,
+    .choose-destination--showcase > .row-odd,
+    .choose-destination--showcase > .row-even {
+      grid-template-columns: 1fr;
+    }
+  }
   /*popular tour section */
   .popular-tour-container {
     flex-direction: column;
@@ -197,6 +205,10 @@
     width: 100%;
     height: 202px;
     margin: 25px auto;
+  }
+  /*Client review section */
+  .review-card-container {
+    flex-direction: column;
   }
   /* Newsletter section */
   .news-letter-container {

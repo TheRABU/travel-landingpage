@@ -1,5 +1,9 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
+  border: 0;
+  outline: none;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
@@ -14,8 +18,21 @@
   --title-text-color: #131318;
 }
 body {
-  max-width: 1442px;
+  width: 100vw;
+  max-width: 100vw;
   background-color: #fff;
+  padding: 0 8.4rem 0 8.4rem;
+  background-color: #fff;
+}
+@media screen and (max-width: 456px) {
+  body {
+    padding: 0 1rem 0 1rem;
+  }
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .content-title {
   color: #131318;
@@ -51,7 +68,6 @@ body {
 
 /* header section starts here */
 .nav-container {
-  width: 80%;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
@@ -105,7 +121,6 @@ body {
 
 /* banner section starts.. */
 .banner-container {
-  width: 80%;
   margin: 30px auto;
 }
 /* Explore Travel style */
@@ -155,7 +170,6 @@ body {
 .dropdown-div {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
-  width: 70%;
   height: 80px;
   gap: 20px;
   display: grid;
@@ -165,7 +179,7 @@ body {
   justify-content: center;
 }
 .dropdown-item {
-  width: 100%;
+  width: 174px;
   height: 52px;
   border-radius: 8px;
   background: #fff;
@@ -230,54 +244,82 @@ select:focus {
 }
 
 /* Choose Destination section */
-.destination-container {
-  width: 80%;
-  height: auto;
-  margin: 15px auto;
-  border: 2px solid teal;
+.choose-destination {
   display: flex;
   flex-direction: column;
-}
-
-.destination-content {
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
   text-align: center;
-  margin: 0 auto;
-  width: 60%;
-  padding: 0px auto 12px auto;
-}
-
-.destination-text {
-  height: 200px;
   width: 100%;
-  margin-top: 10px;
+  gap: 4rem;
+  cursor: pointer;
 }
 
-.image-gallery {
+.choose-destination--showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 1rem;
+}
+
+.choose-destination--showcase > .row-even {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-}
-.image-item img {
-  width: 100%;
+  gap: 1rem;
 }
 
-.destination-name {
+.choose-destination--showcase > .row-even.shrink-left {
+  grid-template-columns: 0.6fr 1fr;
+}
+
+.choose-destination--showcase > .row-odd {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr;
+  gap: 1rem;
+}
+
+.choose-destination--showcase--img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 350px;
+  border-radius: 1rem;
+
+  font-size: 2rem;
   color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-destination--showcase--img.img-1 {
+  background-image: url("../Images/maldives.png");
+}
+
+.choose-destination--showcase--img.img-2 {
+  background-image: url("../Images/indonesia.png");
+}
+.choose-destination--showcase--img.img-3 {
+  background-image: url("../Images/srilanka.png");
+}
+.choose-destination--showcase--img.img-4 {
+  background-image: url("../Images/northamerica.png");
+}
+.choose-destination--showcase--img.img-5 {
+  background-image: url("../Images/kashmir.png");
+}
+.choose-destination--showcase--img.img-6 {
+  background-image: url("../Images/bandarban.png");
+}
+.choose-destination--showcase--img.img-7 {
+  background-image: url("../Images/bangladesh.png");
 }
 
 /* Why chose us */
 .chose-us-section {
-  width: 80%;
   margin: 0 auto;
   height: auto;
 }
@@ -285,7 +327,6 @@ select:focus {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
   padding: 0 auto;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -339,7 +380,6 @@ select:focus {
 
 /* Deals and discount section starts here */
 .tour-package-container {
-  width: 80%;
   margin: 0 auto;
   height: auto;
 }
@@ -426,7 +466,6 @@ select:focus {
 
 /* Video section container's styling starts here */
 .video-section-container {
-  width: 80%;
   height: 84vh;
   display: flex;
   justify-content: space-between;
@@ -490,10 +529,49 @@ select:focus {
     rgba(19, 19, 24, 0) 100%
   );
 }
+/* Customer Review section*/
+.customer-review-container {
+  width: 90%;
+  margin: 30px auto;
+  height: 100%;
+  text-align: center;
+}
+.review-card-container {
+  display: flex;
+  background: 5px solid tomato;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.review-cards {
+  height: 355px;
 
+  border-radius: 16px;
+  border: 0;
+  background-color: var(--fourth-color);
+  margin: 20px;
+  padding: 30px auto;
+  justify-content: center;
+  align-items: stretch;
+  color: #fff;
+  cursor: pointer;
+}
+.review-cards img {
+  margin-left: 10px;
+}
+.client-review-title {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.review-card-contents {
+  width: 80%;
+  margin: 5px auto 0px auto;
+  justify-content: center;
+}
 /* newsletter section */
 .news-letter-container {
-  width: 80%;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
