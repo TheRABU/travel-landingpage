@@ -260,6 +260,7 @@
     margin: -10px auto 20px auto;
   }
 }
+
 /*MEDIUM DEVICES..... */
 /* Tablet devices */
 @media screen and (min-width: 600px) and (max-width: 992px) {
@@ -374,6 +375,20 @@
     flex-direction: column;
     height: auto;
   }
+  .package-card {
+    margin: 20px;
+    width: 90%;
+    height: 380px;
+    padding: 13px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    border: 0;
+    cursor: pointer;
+  }
   /* video section */
   .video-section-container {
     width: 80%;
@@ -457,7 +472,6 @@
     margin: 15px auto;
     position: relative;
   }
-
   /*Footer styles */
   .footer-content-div {
     width: 75%;
