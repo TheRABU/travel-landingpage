@@ -34,11 +34,11 @@
     flex-direction: column;
     padding: 0px;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
   .tour-title,
   .tour-description {
@@ -59,11 +59,16 @@
   }
 
   /* chose us section */
+  .chose-us-section {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+  }
   .chose-us-content {
     justify-content: center;
     text-align: center;
-    margin: 30px auto 0 auto;
-    width: 100%;
+    margin: 16px auto;
+    width: 80%;
     height: max-content;
     padding: 0 auto;
   }
@@ -71,26 +76,175 @@
     margin: 0 auto 0 auto;
   }
   .card-container {
-    height: 650px;
+    height: 100%;
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
   }
 
   .first-card-part {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
     padding: 0px;
     gap: 10px;
     margin: 0 auto 8px auto;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
   }
   .second-card-part {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+  }
+
+  /* Tour package */
+  .package-image-container > div {
+    flex-direction: column;
+    height: auto;
+  }
+  .icons-text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 8px;
+  }
+  .package-contents {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 20px;
+    margin: 4px;
+    color: #5a5a5d;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .package-text-contents {
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 auto;
+    /* margin-top: 30px; */
+  }
+  .package-card {
+    margin: 110px auto 24px auto;
+    width: 90%;
+    height: auto;
+    padding: 8px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    border: 0;
+    cursor: pointer;
+  }
+  /* video section */
+  .video-section-container {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: -13px auto;
+  }
+  .left-side-wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding: 4px auto;
+    justify-content: start;
+  }
+  .left-side-contents {
+    color: cadetblue;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-side-contents .section-title {
+    width: 80%;
+    color: #131318;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .left-side-contents > ul {
+    display: block;
+    margin: 10px;
+    padding-left: 5px;
+  }
+  .right-side-video {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+  }
+  .right-side-video iframe {
+    width: 100%;
+    height: 202px;
+    margin: 25px auto;
+  }
+  /* Newsletter section */
+  .news-letter-container {
+    width: 100%;
+    margin: 0px auto;
+    flex-direction: column;
+  }
+  .left-side-div {
+    width: 77%;
+    padding: 17px;
+    flex-direction: column;
+    margin: 3px auto;
+  }
+  .form-div-container {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+  }
+  .right-side-div {
+    /* height: 250px; */
+    width: 75%;
+    flex-direction: column;
+  }
+  .right-side-div img {
+    width: 100%;
+    max-height: 550px;
+    margin: 15px auto;
+    position: relative;
+  }
+
+  /*Footer styles */
+  .footer-content-div {
+    width: 75%;
+    margin: 25px auto;
+  }
+  .footer-icon-div {
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    flex-direction: row;
+  }
+  .footer-social-links {
+    width: 100%;
+    margin: 35px auto;
+  }
+  .footer-copyright {
+    margin: -10px auto 20px auto;
   }
 }
